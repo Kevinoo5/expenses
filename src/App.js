@@ -1,12 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-// <Expenses expenseData={expenses[0]}></Expenses>
+import Expenses from './components/Expenses/Expenses';
 
-import ExpenseItem from './components/ExpenseItem';
-import Expenses from './components/Expenses';
-
-function App() {
+const App = () => {
     const expenses = [
         {
         date: new Date(2023,0,10),
