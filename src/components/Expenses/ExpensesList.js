@@ -11,12 +11,12 @@ const ExpensesList = (props) => {
         <ul className="expenses-list">
             {
                 props.filteredExpenses.map((expense) => {
-                return <ExpenseItem
-                    key={expense.id}
-                    date={expense.date}
-                    title={expense.title}
-                    price={expense.price}
-                ></ExpenseItem>
+                    return <ExpenseItem
+                        key={expense.id}
+                        date={expense.date}
+                        title={expense.title}
+                        amount={expense.amount}
+                    ></ExpenseItem>
                 })
             }
         </ul>
